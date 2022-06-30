@@ -1,1 +1,30 @@
+# unzip M0_FPGA.zip
 
+#------------------------------------------------------------------
+# file introduce
+#------------------------------------------------------------------
+flash_loader : Keil Flash program project. You can move it to D:\MDK\ARM\Flash
+software     : M0 software file
+system       : M0 system, contain ST / FT / VIVADO env
+
+#------------------------------------------------------------------
+# ST env
+#------------------------------------------------------------------
+cd system/cortex_m0_mcu/rtl_sim
+make compile
+make run TESTNAME=hello
+make verdi
+
+#------------------------------------------------------------------
+# FT env
+#------------------------------------------------------------------
+cd system/cortex_m0_mcu/ft_sim
+make ft_com
+make run TESTNAME=hello
+make verdi
+
+#------------------------------------------------------------------
+# vivado env
+#------------------------------------------------------------------
+cd system/cortex_m0_mcu/vivado
+source run_vivado
