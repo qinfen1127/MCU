@@ -1,0 +1,8 @@
+--cpu Cortex-M0
+".\output\flashprg.o"
+".\output\flashdev.o"
+".\output\flashstk.o"
+--strict --scatter ".\Target.lin"
+--diag_suppress L6305 --summary_stderr --info summarysizes --map --load_addr_map_info --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\FPGADEMO.map" -o .\output\FPGADEMO.axf
