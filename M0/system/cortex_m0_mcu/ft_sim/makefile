@@ -86,7 +86,7 @@ compile_vcs :
 	vcs -full64 -kdb -fsdb -lca $(VCS_OPTIONS) $(VCS_VC_OPTIONS) | tee compile_vcs.log
 
 ft_com :
-	vcs -full64 -kdb -fsdb -lca $(VCS_OPTIONS) -f ft_flist | tee compile_vcs.log
+	vcs -full64 -kdb -debug_access -lca $(VCS_OPTIONS) -f ft_flist | tee compile_vcs.log
 
 verdi :
 	verdi -dbdir ./simv.daidir -ssf dump.fsdb &
