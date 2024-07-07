@@ -1,0 +1,6 @@
+Dependencies for Project 'FPGADEMO', Target 'Cortex-M': (DO NOT MODIFY !)
+F (.\FlashPrg.c)(0x5A45E3B2)(-c --cpu Cortex-M0 --li -g -O2 --apcs=interwork --apcs /ropi/rwpi -I.\RTE\_Cortex-M-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DARMCM0-o .\output\flashprg.o --omf_browse .\output\flashprg.crf --depend .\output\flashprg.d)
+I (..\FlashOS.H)(0x559CEDB4)
+F (.\FlashDev.c)(0x5A45E8A3)(-c --cpu Cortex-M0 --li -g -O2 --apcs=interwork --apcs /ropi/rwpi -I.\RTE\_Cortex-M-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DARMCM0-o .\output\flashdev.o --omf_browse .\output\flashdev.crf --depend .\output\flashdev.d)
+I (..\FlashOS.H)(0x559CEDB4)
+F (.\FlashStk.s)(0x582D8154)(--cpu Cortex-M0 --li -g --apcs=interwork --apcs /ropi/rwpi -I.\RTE\_Cortex-M-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "ARMCM0 SETA 1"-o .\output\flashstk.o --depend .\output\flashstk.d)
